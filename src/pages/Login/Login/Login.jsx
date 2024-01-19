@@ -64,7 +64,12 @@ const Login = () => {
           Submit
         </button>
         <div className='text-secondary'>
-          Don't have an account <Link to='/register'>Register</Link>
+          Don't have an account{' '}
+          <Link
+            to='/register'
+            state={location.state}>
+            Register
+          </Link>
         </div>
         <div className='text-danger'></div>
       </form>
